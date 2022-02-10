@@ -1,0 +1,32 @@
+public class Variables
+{  
+    static int m=100; 
+    void method()  
+    {    
+        int n=90;
+    }  
+    public static void main(String args[])  
+    {  
+        int data=50;
+        method obj=new method();
+        system.out.println(+data);
+        system.out.println(+obj.n);
+        system.out.println(+Variables.m);
+        
+        // Swaping of two numbers
+        
+         int x, y, t; 
+       Scanner sc = new Scanner(System.in);  
+       System.out.println("Enter the value of X and Y");  
+       x = sc.nextInt();  
+       y = sc.nextInt();  
+       System.out.println("before swapping numbers: "+x +"  "+ y);  
+       /*swapping */  
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+        
+    }  
+ }
