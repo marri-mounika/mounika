@@ -1,0 +1,58 @@
+abstract class Bank{    
+abstract int getRateOfInterest();    
+}    
+class SBI extends Bank{    
+int getRateOfInterest()
+return 7;
+}    
+class PNB extends Bank{    
+int getRateOfInterest()
+return 8;    
+}    
+    
+ class TestBank
+{    
+  public static void main(String args[])
+  {    
+    Bank b;  
+    b=new SBI();  
+    System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");    
+    b=new PNB();  
+    System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");    
+  }
+  
+  // calculate perimeter 
+  abstract class Perimeter{  
+  abstract int getRateOfInterest();
+  }
+  class Rectangular extends perimeter {
+  int getRateOfInterest()
+  int perimeter=2*(4+6);
+  return perimeter
+  }
+  class Square extends perimeter {
+  int getRateOfInterest()
+  int perimeter=4*(4);
+  return perimeter
+  }    
+  
+  class Triangle extends perimeter {
+  int getRateOfInterest()
+  int perimeter=4+5+6;
+  return perimeter
+  }
+  
+  class TestPerimeter
+{    
+  public static void main(String args[])
+  {    
+    Perimeter p;  
+    p=new Rectangular();  
+    System.out.println("perimeter of rectangular is: "+p.getRateOfInterest());    
+    p=new Square();  
+    System.out.println("perimeter of square is "+b.getRateOfInterest()+" %"); 
+    p=new Triangle();  
+    System.out.println("perimeter of Triangle is "+b.getRateOfInterest()+" %"); 
+  }
+  
+}    
