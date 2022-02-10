@@ -1,0 +1,37 @@
+import java.util.Scanner;
+ 
+public class MultipicationTable {
+ 
+ public static void main(String[] args) {
+  Scanner in = new Scanner(System.in);
+   
+  System.out.print("Input a number: ");
+  int num1 = in.nextInt();
+   
+  for (int i=0; i< 10; i++){
+   System.out.println(num1 + " x " + (i+1) + " = " +(num1 * (i+1)));
+  }
+  
+  // prime numbers between two numbers 
+  
+  Scanner s = new Scanner(System.in);  
+       System.out.print("Enter the first number : ");  
+       int start = s.nextInt();  
+       System.out.print("Enter the second number : ");  
+       int end = s.nextInt();  
+       System.out.println("List of prime numbers between " + start + " and " + end);  
+       for (int i = start; i <= end; i++) {  
+           if (isPrime(i)) {  
+               System.out.println(i);  
+           }  
+       }  
+   }  
+   public static boolean isPrime(int n) {  
+       if (n <= 1) {  
+           return false;  
+       }  
+       for (int i = 2; i <= Math.sqrt(n); i++) {  
+           if (n % i == 0) {  
+               return false;  
+ }
+}
