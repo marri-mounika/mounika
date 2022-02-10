@@ -1,0 +1,50 @@
+package com.devlabs.assignment1;
+
+import java.util.Scanner;
+
+public class AreaOfTriangle {
+
+       public static void main(String[] args) {
+             // TODO Auto-generated method stub
+
+             Scanner scan = new Scanner(System.in);
+                System.out.println("Enter the base of the traingle :");
+             double base =scan.nextDouble();
+             System.out.println("Enter the height of the triangle :");
+             double height =scan.nextDouble();
+             double area =(base*height)/2;
+             System.out.println("Area of triangle is:"+area);
+             scan.close(); 
+             
+            // unary operators
+             int x=10;  
+            System.out.println(x++); 
+            System.out.println(++x);
+            System.out.println(x--);  
+            System.out.println(--x);
+            
+            // arithmatic operators
+            int a=10;  
+              int b=5;  
+              System.out.println(a+b);
+              System.out.println(a-b);  
+              System.out.println(a*b);  
+              System.out.println(a/b);  
+              System.out.println(a%b);  
+             
+             // printing Quotient and Remainder of numbers
+             
+             
+            int quotient = 0, rem = 0;
+            Scanner scan = new Scanner(System.in);
+                System.out.println("Enter the base of the traingle :");                
+                int num1 =scan.nextInt();
+                int num2 =scan.nextInt();            
+            quotient = num1 / num2;
+            rem = num1 % num2;
+            System.out.println("Quotient is"+quotient);
+            System.out.println("Remainder is"+rem);
+            
+                   }
+
+}
